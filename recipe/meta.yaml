@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/doctr_versions_menu-{{ version }}.tar.gz
   sha256: d49166b7a0a1a0ce14f37a5314d420de69421a1764307f91c9910a02852d7c95
-  patches:
-    - 0001-no_unicode.patch
 
 build:
   noarch: python
