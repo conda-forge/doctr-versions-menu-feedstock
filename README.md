@@ -5,11 +5,13 @@ Home: https://github.com/goerz/doctr_versions_menu
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/doctr-versions-menu-feedstock/blob/master/LICENSE.txt)
 
 Summary: Sphinx extension and command to add a versions menu to Doctr-deployed documentation
 
+Development: https://github.com/goerz/doctr_versions_menu
 
+Documentation: https://goerz.github.io/doctr_versions_menu
 
 Current build status
 ====================
