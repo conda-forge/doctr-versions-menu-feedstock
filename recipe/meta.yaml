@@ -1,5 +1,5 @@
 {% set name = "doctr-versions-menu" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/doctr_versions_menu-{{ version }}.tar.gz
-  sha256: d808d01b940de503c58a072980a9c8c987b681b58a40bd05cc1ab14068255337
+  sha256: 8a8d9aa8f9b598491aa5e6d67248a121714f0ab2c817c5d11354fba1398916b4
 
 build:
   noarch: python
