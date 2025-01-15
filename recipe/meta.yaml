@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/doctr_versions_menu-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/doctr_versions_menu-{{ version }}.tar.gz
   sha256: 8a8d9aa8f9b598491aa5e6d67248a121714f0ab2c817c5d11354fba1398916b4
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - doctr-versions-menu = doctr_versions_menu.cli:main
 
 requirements:
   host:
-    - python >=3.5
+    - python {{ python_min }}
     - pip
     - setuptools
 
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - click >=6.7
     - configobj >=5.0.6
     - doctr
@@ -32,6 +32,8 @@ requirements:
     - sphinx
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - doctr_versions_menu
 
